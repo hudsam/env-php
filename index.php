@@ -1,4 +1,4 @@
 <?php
 
-$set_USER = (empty($_ENV['USER'])) ? 'World' : $_ENV['USER'];
+$set_USER = (empty(getenv('USER'))) ? 'World' : getenv('USER');
 echo 'Hello, ' . $set_USER . ' !';
